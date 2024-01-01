@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Javascript with Css and functions</title>
+    <style type="text/css">
+        .circle{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            float: left;
+            margin-right: 50px;
+        }
+
+        #red_circle{
+            background-color: red;
+        }
+        
+        #blue_circle{
+            background-color: blue;
+        }
+        
+        #yellow_circle{
+            background-color: yellow;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="circle" id="red_circle"></div>
+    <div class="circle" id="blue_circle"></div>
+    <div class="circle" id="yellow_circle"></div>
+    <script>
+
+document.getElementById("red_circle").onclick = function(){
+    document.getElementById("red_circle").style.display = "none";
+}
+document.getElementById("blue_circle").onclick = function(){
+    document.getElementById("blue_circle").style.borderRadius = "20%";
+} 
+document.getElementById("yellow_circle").onclick = function(){
+    document.getElementById("yellow_circle").style.backgroundColor = "pink";
+}
+    </script>
 </body>
 </html>
