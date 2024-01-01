@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text">Hello Ayesha</p>
+    <button id="mybtn">Change Text</button>
+
+    <p id="text_2">Computer</p>
+    <button id="mybtn_2">Append text</button>
+
+    <script type="text/javascript">
+        document.getElementById("mybtn").onclick = function(){
+            alert("Button Clicked!!!");
+            document.getElementById("text").innerHTML = "Hello Salman";
+        }
+
+        document.getElementById("mybtn_2").onclick = function(){
+            document.getElementById("text_2").innerHTML = "I'm a " + document.getElementById("text_2").innerHTML + " Enginner";
+        }
+    </script>
+</body>
+</html>
