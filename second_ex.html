@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript with Css and functions</title>
+    <script src="Jquery/jquery.min.js"></script>
     <style type="text/css">
         .circle{
             width: 100px;
@@ -42,6 +43,13 @@ document.getElementById("blue_circle").onclick = function(){
 document.getElementById("yellow_circle").onclick = function(){
     document.getElementById("yellow_circle").style.backgroundColor = "pink";
 }
+if(typeof jQuery=="undefined"){ // checking if Jquery is installed
+alert("not installed");
+}
+else{
+    alert("installed");
+}
+
     </script>
 </body>
 </html>
